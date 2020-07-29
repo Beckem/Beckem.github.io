@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<title> Album ảnh </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">  
+	<script type="text/javascript" src="vendor/bootstrap.js"></script>
+	<link rel="stylesheet" href="vendor/bootstrap.css">
+ 	<link rel="stylesheet" href="style.css">
+ 	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css'>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+ 	<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+<!--   load fancybox -->
+<script src="js/jquery-1.12.3.min.js"></script>
+ 
+ <!-- load animate.css --> 
+ <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
+ <script type="text/javascript" src="js/wow.js"></script>
+    <!-- Add mousewheel plugin (this is optional) -->
+    <script type="text/javascript" src="js/jquery.mousewheel-3.0.6.pack.js"></script>
+
+    <!-- Add fancyBox main JS and CSS files -->
+    <script type="text/javascript" src="js/jquery.fancybox.js?v=2.1.5"></script>
+    <link rel="stylesheet" type="text/css" href="js/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+
+<script>
+    $(function(){
+        $('[rel="nhomanh"]').fancybox();
+        $(".anhnho").addClass('wow bounceInUp');
+        new WOW().init();
+        
+        var n = $(".anhnho").length;
+
+        for(var i=0;i<n;i++) {
+            $(".anhnho").eq(i).attr('data-wow-delay',i*0.15+'s');
+
+        }
+    })
+</script>
+</head>
+    <style>
+        body{
+            background-color: #734e599e;
+        }
+        .anhnho {
+            width: 100%;
+            height: 350px;
+            margin-top:30px;
+        }
+    </style>
+<body>
+    <nav class="navbar navbar-light bg-faded menu">
+        <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#menu">
+
+        </button>
+        <div class="collapse navbar-toggleable-xs" id="menu">
+        <a class="navbar-brand logo" href="index.html"></a>
+        <ul class="nav navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active" href="album.html">Album ảnh </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="count.html">Đếm ngày</a>
+            </li>
+        </ul>
+        </div>
+    </nav>
+    <!-- end menu -->
+    <div class="container">
+        
+
+        <div class="row">
+            <div class="col-sm-4">
+                <a href="img/1.jpg" rel="nhomanh"> <img class="anhnho" src="img/1.jpg" alt=""></a>
+            </div>
+            <div class="col-sm-4">
+                <a href="img/2.jpg" rel="nhomanh"> <img class="anhnho" src="img/2.jpg" alt=""></a>
+            </div>
+            <div class="col-sm-4">
+                <a href="img/3.jpg" rel="nhomanh"> <img class="anhnho" src="img/3.jpg" alt=""></a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <a href="img/4.jpg" rel="nhomanh"> <img class="anhnho" src="img/4.jpg" alt=""></a>
+            </div>
+            <div class="col-sm-4">
+                <a href="img/5.jpg" rel="nhomanh"> <img class="anhnho" src="img/5.jpg" alt=""></a>
+            </div>
+            <div class="col-sm-4">
+                <a href="img/6.jpg" rel="nhomanh"> <img class="anhnho" src="img/6.jpg" alt=""></a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <a href="img/7.jpg" rel="nhomanh"> <img class="anhnho" src="img/7.jpg" alt=""></a>
+            </div>
+            <div class="col-sm-4">
+                <a href="img/8.jpg" rel="nhomanh"> <img class="anhnho" src="img/8.jpg" alt=""></a>
+            </div>
+            <div class="col-sm-4">
+                <a href="img/9.jpg" rel="nhomanh"> <img class="anhnho" src="img/9.jpg" alt=""></a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <a href="img/10.jpg" rel="nhomanh"> <img class="anhnho" src="img/10.jpg" alt=""></a>
+            </div>
+            <div class="col-sm-4">
+                <a href="img/11.jpg" rel="nhomanh"> <img class="anhnho" src="img/11.jpg" alt=""></a>
+            </div>
+            <div class="col-sm-4">
+                <a href="img/12.jpg" rel="nhomanh"> <img class="anhnho" src="img/12.jpg" alt=""></a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <a href="img/13.jpg" rel="nhomanh"> <img class="anhnho" src="img/13.jpg" alt=""></a>
+            </div>
+            <div class="col-sm-4">
+                <a href="img/14.jpg" rel="nhomanh"> <img class="anhnho" src="img/14.jpg" alt=""></a>
+            </div>
+            <div class="col-sm-4">
+                <a href="img/15.jpg" rel="nhomanh"> <img class="anhnho" src="img/15.jpg" alt=""></a>
+            </div>
+        </div>
+    </div>
+</body>

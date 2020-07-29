@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<title> Đếm </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">  
+	<script type="text/javascript" src="vendor/bootstrap.js"></script>
+ 	<script type="text/javascript" src="js/count.js"></script>
+    
+	<link rel="stylesheet" href="vendor/bootstrap.css">
+ 	<link rel="stylesheet" href="style.css">
+ 	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+ 	<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+</head>
+<style>
+    body{
+        background-image: url(img/bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+</style>
+<body>
+    <nav class="navbar navbar-light bg-faded menu">
+        <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#menu">
+
+        </button>
+        <div class="collapse navbar-toggleable-xs" id="menu">
+        <a class="navbar-brand logo" href="index.html"></a>
+        <ul class="nav navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="album.html">Album ảnh </a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="count.html">Đếm ngày</a>
+            </li>
+            
+        </ul>
+        </div>
+    </nav>
+ 		
+    
+    <h1 class="tieude"> Đếm ngày yêu em</h1>
+
+    <div class="block">
+        <div class="countdown" id="countdown">
+
+            <div class="time">
+                <h2 id="days">00</h2>
+                <small>Days</small>
+            </div>
+            <div class="time">
+                <h2 id="hours">00</h2>
+                <small>Hours</small>
+            </div>
+            <div class="time">
+                <h2 id="minutes">00</h2>
+                <small>Minutes</small>
+            </div>
+            <div class="time">
+                <h2 id="seconds">00</h2>
+                <small>Seconds</small>
+            </div>
+        </div> <!-- end countdown -->
+        <img src="img/spinner.gif" alt="Loading" id="loading"> 
+    </div> <!-- end block -->
+    
+  
+  
+</body>
+</html>
